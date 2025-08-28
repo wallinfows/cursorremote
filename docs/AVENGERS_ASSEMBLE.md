@@ -11,13 +11,13 @@
 - **Last Updated**: [Current Date]
 
 ### Component Status
-| Component | Status | Progress | Next Action |
-|-----------|--------|----------|-------------|
-| Desktop Agent | 🟡 Planning | 0% | Initialize Node.js project |
-| WebSocket Bridge | 🟡 Planning | 0% | Initialize Node.js project |
-| Mobile App | 🟡 Planning | 0% | Initialize Node.js project |
-| Documentation | ✅ Active | 80% | Component-specific docs |
-| Development Environment | 🟡 Pending | 0% | Setup scripts |
+| Component | Status | Progress | Next Action | Team |
+|-----------|--------|----------|-------------|------|
+| Desktop Agent | 🟡 Planning | 0% | Initialize Node.js project | Cursor Squad |
+| WebSocket Bridge | 🟡 Planning | 0% | Initialize Node.js project | Dev Team |
+| Mobile App | 🟡 Planning | 0% | Initialize Node.js project | Dev Team |
+| Documentation | ✅ Active | 80% | Component-specific docs | Both Teams |
+| Development Environment | 🟡 Pending | 0% | Setup scripts | Dev Team |
 
 ### Quick Actions
 - [ ] **Start Development**: Choose component to begin
@@ -25,6 +25,12 @@
 - [ ] **Update Session Memory**: Review progress
 - [ ] **Deploy Changes**: Push to GitHub
 - [ ] **Run Tests**: Execute test suite
+
+### Expert Teams Status
+| Team | Lead | Current Focus | Next Huddle |
+|------|------|---------------|-------------|
+| **Cursor Squad** 🎯 | Cursor Expert | Desktop Agent Setup | Cursor API Research |
+| **Dev Team** 💻 | Frontend Lead | WebSocket Bridge Design | Mobile App Architecture |
 
 ## 🛠️ Development Tools & Commands
 

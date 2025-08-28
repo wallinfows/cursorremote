@@ -67,6 +67,33 @@ Huddles are our collaborative development sessions where the team comes together
 - User experience improvements
 - Process optimization
 
+#### 6. **Team-Specific Huddles** 🎯
+**Purpose**: Address team-specific challenges and coordination
+**Duration**: 30-45 minutes
+**Participants**: Team members + relevant cross-team experts
+
+**Cursor Squad Huddles**:
+- Cursor API integration challenges
+- Desktop agent development issues
+- System integration problems
+- Security implementation decisions
+
+**Dev Team Huddles**:
+- Mobile web app development challenges
+- WebSocket bridge implementation issues
+- UX/UI design decisions
+- Performance optimization strategies
+
+#### 7. **Cross-Team Integration Huddles** 🤝
+**Purpose**: Ensure seamless component integration and alignment
+**Duration**: 60 minutes
+**Participants**: Both teams' leads and architects
+**Examples**:
+- API compatibility validation
+- Data format standardization
+- Security protocol alignment
+- End-to-end testing coordination
+
 ## 🚀 How Huddles Work
 
 ### Pre-Huddle Preparation
@@ -684,6 +711,190 @@ class HuddleMetrics {
       "actionItems": 18,
       "completedActions": 14
     }
+  }
+}
+```
+
+## 🎯 Expert Team Integration
+
+### Cursor Squad Integration
+```javascript
+// Cursor Squad Huddle Manager
+class CursorSquadHuddleManager {
+  constructor(huddleManager) {
+    this.huddleManager = huddleManager;
+    this.cursorSquadMembers = [
+      'cursor-expert',
+      'desktop-specialist', 
+      'api-architect',
+      'security-specialist'
+    ];
+  }
+
+  async createCursorIntegrationHuddle(issue) {
+    const huddle = await this.huddleManager.createHuddle({
+      type: 'team-specific',
+      title: `Cursor Integration: ${issue.title}`,
+      duration: 45,
+      participants: this.cursorSquadMembers,
+      goals: [
+        'Analyze Cursor API requirements',
+        'Design integration approach',
+        'Plan implementation timeline',
+        'Identify potential blockers'
+      ],
+      context: {
+        team: 'cursor-squad',
+        issue: issue,
+        expertise: ['cursor-api', 'desktop-development', 'security']
+      }
+    });
+    
+    return huddle;
+  }
+
+  async createDesktopAgentHuddle(component) {
+    const huddle = await this.huddleManager.createHuddle({
+      type: 'team-specific',
+      title: `Desktop Agent: ${component} Development`,
+      duration: 30,
+      participants: this.cursorSquadMembers,
+      goals: [
+        'Review component requirements',
+        'Plan implementation approach',
+        'Identify integration points',
+        'Set development milestones'
+      ],
+      context: {
+        team: 'cursor-squad',
+        component: component,
+        expertise: ['desktop-development', 'system-integration']
+      }
+    });
+    
+    return huddle;
+  }
+}
+```
+
+### Dev Team Integration
+```javascript
+// Dev Team Huddle Manager
+class DevTeamHuddleManager {
+  constructor(huddleManager) {
+    this.huddleManager = huddleManager;
+    this.devTeamMembers = [
+      'frontend-lead',
+      'backend-architect',
+      'mobile-specialist',
+      'devops-engineer'
+    ];
+  }
+
+  async createMobileDevelopmentHuddle(feature) {
+    const huddle = await this.huddleManager.createHuddle({
+      type: 'team-specific',
+      title: `Mobile Development: ${feature.title}`,
+      duration: 45,
+      participants: this.devTeamMembers,
+      goals: [
+        'Design mobile interface approach',
+        'Plan responsive implementation',
+        'Define UX/UI requirements',
+        'Set performance benchmarks'
+      ],
+      context: {
+        team: 'dev-team',
+        feature: feature,
+        expertise: ['mobile-development', 'react', 'pwa']
+      }
+    });
+    
+    return huddle;
+  }
+
+  async createWebSocketBridgeHuddle(protocol) {
+    const huddle = await this.huddleManager.createHuddle({
+      type: 'team-specific',
+      title: `WebSocket Bridge: ${protocol} Implementation`,
+      duration: 45,
+      participants: this.devTeamMembers,
+      goals: [
+        'Design WebSocket protocol',
+        'Plan message format',
+        'Define connection management',
+        'Set reliability requirements'
+      ],
+      context: {
+        team: 'dev-team',
+        protocol: protocol,
+        expertise: ['websocket', 'real-time', 'backend']
+      }
+    });
+    
+    return huddle;
+  }
+}
+```
+
+### Cross-Team Integration
+```javascript
+// Cross-Team Huddle Manager
+class CrossTeamHuddleManager {
+  constructor(huddleManager, cursorSquadManager, devTeamManager) {
+    this.huddleManager = huddleManager;
+    this.cursorSquadManager = cursorSquadManager;
+    this.devTeamManager = devTeamManager;
+  }
+
+  async createIntegrationHuddle(integrationPoint) {
+    const cursorSquadLeads = ['cursor-expert', 'api-architect'];
+    const devTeamLeads = ['frontend-lead', 'backend-architect'];
+    
+    const huddle = await this.huddleManager.createHuddle({
+      type: 'cross-team-integration',
+      title: `Integration: ${integrationPoint.title}`,
+      duration: 60,
+      participants: [...cursorSquadLeads, ...devTeamLeads],
+      goals: [
+        'Validate API compatibility',
+        'Standardize data formats',
+        'Align security protocols',
+        'Plan integration testing'
+      ],
+      context: {
+        teams: ['cursor-squad', 'dev-team'],
+        integrationPoint: integrationPoint,
+        expertise: ['api-design', 'integration', 'security']
+      }
+    });
+    
+    return huddle;
+  }
+
+  async createArchitectureReviewHuddle(system) {
+    const architects = ['api-architect', 'backend-architect'];
+    const leads = ['cursor-expert', 'frontend-lead'];
+    
+    const huddle = await this.huddleManager.createHuddle({
+      type: 'cross-team-integration',
+      title: `Architecture Review: ${system.name}`,
+      duration: 60,
+      participants: [...architects, ...leads],
+      goals: [
+        'Review system architecture',
+        'Validate component interactions',
+        'Assess scalability planning',
+        'Review security architecture'
+      ],
+      context: {
+        teams: ['cursor-squad', 'dev-team'],
+        system: system,
+        expertise: ['architecture', 'system-design', 'security']
+      }
+    });
+    
+    return huddle;
   }
 }
 ```

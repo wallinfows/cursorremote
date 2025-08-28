@@ -41,6 +41,34 @@
       "owner": "api-architect",
       "timestamp": "2024-01-15T10:35:00Z",
       "status": "approved"
+    },
+    {
+      "id": "dec-003",
+      "text": "Phase B: Test and bulletproof the system with advanced remote control capabilities",
+      "owner": "cursor-expert",
+      "timestamp": "2024-01-15T11:05:00Z",
+      "status": "approved"
+    },
+    {
+      "id": "dec-004",
+      "text": "Implement system recovery capabilities: bring offline computer online within 10 minutes",
+      "owner": "desktop-specialist",
+      "timestamp": "2024-01-15T11:05:00Z",
+      "status": "approved"
+    },
+    {
+      "id": "dec-005",
+      "text": "Add escalation and restart capabilities for major system issues",
+      "owner": "security-specialist",
+      "timestamp": "2024-01-15T11:05:00Z",
+      "status": "approved"
+    },
+    {
+      "id": "dec-006",
+      "text": "Enable remote Cursor window startup and control",
+      "owner": "cursor-expert",
+      "timestamp": "2024-01-15T11:05:00Z",
+      "status": "approved"
     }
   ],
   "actionItems": [
@@ -67,6 +95,30 @@
       "dueDate": "2024-01-16T10:00:00Z",
       "status": "pending", 
       "timestamp": "2024-01-15T10:35:00Z"
+    },
+    {
+      "id": "act-004",
+      "text": "Create detailed Phase B development roadmap",
+      "assignee": "backend-architect",
+      "dueDate": "2024-01-16T10:00:00Z",
+      "status": "pending",
+      "timestamp": "2024-01-15T11:05:00Z"
+    },
+    {
+      "id": "act-005",
+      "text": "Research system recovery and wake-on-LAN capabilities",
+      "assignee": "desktop-specialist",
+      "dueDate": "2024-01-16T10:00:00Z",
+      "status": "pending",
+      "timestamp": "2024-01-15T11:05:00Z"
+    },
+    {
+      "id": "act-006",
+      "text": "Research Cursor window startup and control APIs",
+      "assignee": "cursor-expert",
+      "dueDate": "2024-01-16T10:00:00Z",
+      "status": "pending",
+      "timestamp": "2024-01-15T11:05:00Z"
     }
   ],
   "notes": [

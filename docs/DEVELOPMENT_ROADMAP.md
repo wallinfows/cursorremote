@@ -18,6 +18,22 @@
 - [ ] Secure WebSocket communication
 - [ ] Mobile-responsive remote control interface
 
+### Phase B: System Reliability & Advanced Remote Control 🛡️
+**Status**: PLANNED
+**Timeline**: Weeks 4-6
+
+**Objectives**:
+- [ ] Implement wake-on-LAN and system recovery
+- [ ] Add escalation and restart capabilities
+- [ ] Enable remote Cursor window startup and control
+- [ ] Build bulletproof monitoring and alerting
+
+**Deliverables**:
+- [ ] System recovery within 10 minutes
+- [ ] Multi-level escalation system
+- [ ] Remote Cursor window control
+- [ ] Advanced health monitoring and diagnostics
+
 ### Phase 1: Foundation & Infrastructure ✅
 **Status**: COMPLETED
 **Timeline**: Week 1
